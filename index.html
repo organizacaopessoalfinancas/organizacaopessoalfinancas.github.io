@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Orçamento pessoal</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+		<link rel="stylesheet" type="text/css" href=""/>
+		<script src="app.js"></script>
+	</head>
+	<body>
+		<noscript><p>Habilitar JavaScript e cookies para o funcionamento do WebApp.</p></noscript>
+		<div id="hidecontentwithoutjs" style="display:none;">
+			<div id="titleheader">
+				<h1>Orçamento pessoal</h1>
+			</div>
+			<div id="statsheader">
+				<div class="halfwidth" style="left:0;">
+				</div>
+				<div class="halfwidth" style="right:0;">
+					<div id="bardespesas" class="amountbar"><div id="bardespesasperc"><span id="percdespval"></span></div></div>
+					<div id="barrenda" class="amountbar"><div id="barrendaperc"><span id="percrendval"></span></div></div>
+				</div>
+			</div>
+			<div id="summarylisting">
+				<h2>Renda total</h2>
+				<span id="valrenda"></span>
+				<h2>Despesas mensais</h2>
+				<span id="valdespesas"></span>
+				<h2>Economias</h2>
+				<span id="valeconomias"></span>
+				<h2>Saldo em dinheiro</h2>
+				<span id="valsaldo"></span>
+			</div>
+			<div id="buttonsdiv">
+					<input type="button" value="Renda total" onclick="openModal('Renda total', 0);"/>
+					<input type="button" value="Despesas" onclick="openModal('Despesas', 1)"/>
+					<input type="button" value="Economias" onclick="openModal('Economias', 2)"/>
+			</div>
+			<div id="modal">
+				<input type="button" value="&lt;" onclick="hideModal()" id="modalclose"/>
+				<h1 id="modaltitle"></h1>
+				<table align="center" valign="center"><tr><th>Descrição</th><th>Valor</th><th></th></tr></table>
+				<input type="button" value="+" onclick="novaLinha()"/>
+				<input type="button" value="Salvar" onclick="salvar()"/>
+			</div>
+		</div>
+		<script src="cosmetico.js"></script>
+	</body>
+</html>

@@ -1,0 +1,24 @@
+#titleheader {
+	background:powderblue;
+}
+#statsheader {
+	background:green;
+}
+#barrenda {
+	background:orange;
+}
+#bardespesas {
+	background:cyan;
+}
+#summarylisting {
+	background:orange;
+}
+.halfwidth:nth-child(1) {
+	background:yellow;
+}
+.halfwidth:nth-child(2) {
+	background:red;
+}
+#buttonsdiv {
+	background:purple;
+}

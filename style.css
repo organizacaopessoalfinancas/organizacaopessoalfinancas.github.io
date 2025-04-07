@@ -1,0 +1,123 @@
+body {
+	margin:5%;
+}
+#titleheader {
+	height:5vh;
+	width:100%;
+}
+#statsheader {
+	height:40vh;
+	position:absolute;
+	width:90%;
+}
+#statsheader .halfwidth {
+	height:200px;
+	width:50%;
+	top:0;
+	bottom:0;
+	position:absolute;
+	margin:auto;
+}
+#bardespesas::after {
+	content:'Despesas';
+	position:absolute;
+	bottom:-15%;
+}
+#barrenda::after {
+	content:'Renda';
+	position:absolute;
+	bottom:-15%;
+}
+#barrenda {
+	right:15%;
+}
+#bardespesas {
+	left:15%;
+}
+.amountbar {
+	max-height:80%;
+	height:100%;
+	width:20%;
+	position:absolute;
+	top:0;
+	bottom:0;
+	margin:auto;
+}
+#bardespesasperc, #barrendaperc {
+	position:absolute;
+	bottom:0;
+	width:100%;
+	background:purple;
+}
+#summarylisting {
+	position:absolute;
+	height:30vh;
+	width:90%;
+	top:40vh;
+}
+#summarylisting h2 {
+	border-bottom:1px solid blue;
+}
+#buttonsdiv {
+	position:absolute;
+	height:25vh;
+	width:90%;
+	top:70vh;
+	text-align:center;
+}
+#buttonsdiv input[type="button"] {
+	width:70%;
+	height:30%;
+	padding:2%;	
+}
+#modal {
+	display:none;
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	text-align:center;
+	background:#ffffd8;
+}
+#modalclose {
+	background:none;
+	display:block;
+	background:black;
+	border:1px solid black;
+	font-size:14pt;
+	position:absolute;
+	top:0;
+	left:0;
+	height:5vh;
+	width:5vh;
+	color:white;
+}
+#modaltitle {
+	margin-top:8%;
+	background:black;
+	color:white;
+	display:inline-block;
+}
+#modal table tr th:nth-child(1), #modal table tr td:nth-child(1) {
+	width:40%;
+}
+#modal table tr th:nth-child(1), #modal table tr td:nth-child(2) {
+	width:30%;
+}
+input[value="Salvar"] {
+	position:absolute;
+	left:0;
+	right:0;
+	margin:auto;
+	width:40%;
+	height:5%;
+	bottom:10%;
+}
+.amountbar div span {
+	display:none;
+	background:yellow;
+	position:absolute;
+	white-space: nowrap;
+	overflow:show;
+}
