@@ -50,20 +50,17 @@ body {
 	background:purple;
 }
 #summarylisting {
-	position:absolute;
-	height:30vh;
 	width:90%;
-	top:40vh;
+	margin-top:35vh;
 }
 #summarylisting h2 {
 	border-bottom:1px solid blue;
 }
 #buttonsdiv {
-	position:absolute;
 	height:25vh;
 	width:90%;
-	top:70vh;
 	text-align:center;
+	margin-top:10%;
 }
 #buttonsdiv input[type="button"] {
 	width:70%;
