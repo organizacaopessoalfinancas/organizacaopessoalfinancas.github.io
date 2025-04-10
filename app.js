@@ -33,7 +33,7 @@ function debug(val) {
 function getLinhaString(idnum, desc, val) {
 	if (!desc) { desc = "" }
 	if (!val) { val = "" }
-	return "<td><input type='text' id='vdescricao"+idnum+"' value='"+desc+"'/></td><td><input type='text' id='vvalor"+idnum+"' value='"+val+"'/></td><td><input type='button' value='×' onclick='removerLinha("+idnum+")'/></td>";
+	return "<td><input type='text' id='vdescricao"+idnum+"' value='"+desc+"'/></td><td><input type='number' step='any' id='vvalor"+idnum+"' value='"+val+"'/></td><td><input type='button' value='×' onclick='removerLinha("+idnum+")'/></td>";
 }
 function getLastLineId() {
 	return parseInt(document.getElementsByTagName("table")[0].lastChild.id.substr(5) || 1);
@@ -43,6 +43,7 @@ function adicionarLinha(idnum, desc, val) {
 	tr.innerHTML = getLinhaString(idnum, desc, val);
 	tr.id = "linha"+idnum;
 	document.getElementsByTagName("table")[0].appendChild(tr);
+	//document.getElementById("vvalor"+idnum).addEventListener();
 }
 function novaLinha() {
 	var lastId = getLastLineId();
@@ -101,7 +102,9 @@ function salvar() {
 	var tmparray = [];
 	for (var i = 1, y = 1; i <= data[dti].length; i++) {
 		if (data[dti][i] != null) {
-			tmparray[y++] = data[dti][i];
+			if (i <= getLastLineId()) {
+				tmparray[y++] = data[dti][i];
+			}
 		}
 	}
 	data[dti] = tmparray;
