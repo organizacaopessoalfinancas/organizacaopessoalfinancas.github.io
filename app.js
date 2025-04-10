@@ -71,7 +71,7 @@ function atualizarDados() {
 	var totalsum = [0, 0, 0];
 	for (var y = 0; y < 3; y++) {
 		for (var i = 1; i < data[y].length; i++) {
-			totalsum[y]+=parseInt(data[y][i][1]);
+			totalsum[y]+=parseFloat(data[y][i][1]);
 		}
 	}
 	document.getElementById("valrenda").innerHTML = "R$ " + totalsum[0];
