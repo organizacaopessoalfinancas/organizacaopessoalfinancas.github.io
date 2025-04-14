@@ -76,6 +76,7 @@ body {
 	height:100%;
 	text-align:center;
 	background:#ffffd8;
+	overflow:scroll;
 }
 #modalclose {
 	background:none;
@@ -103,13 +104,25 @@ body {
 	width:30%;
 }
 input[value="Salvar"] {
-	position:absolute;
+	display:block;
+	left:0;
+	right:0;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:1%;
+	width:40%;
+	height:5%;
+}
+#divtable {
+	max-height:70vh;
+	height:70vh;
+	overflow:scroll;
+	border:ridge 3px black;
+	width:fit-content;
 	left:0;
 	right:0;
 	margin:auto;
-	width:40%;
-	height:5%;
-	bottom:10%;
+	padding:3%;
 }
 .amountbar div span {
 	display:none;
