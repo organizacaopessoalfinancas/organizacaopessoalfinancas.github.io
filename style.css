@@ -97,12 +97,6 @@ body {
 	color:white;
 	display:inline-block;
 }
-#modal table tr th:nth-child(1), #modal table tr td:nth-child(1) {
-	width:40%;
-}
-#modal table tr th:nth-child(1), #modal table tr td:nth-child(2) {
-	width:30%;
-}
 input[value="Salvar"] {
 	display:block;
 	left:0;
@@ -118,11 +112,17 @@ input[value="Salvar"] {
 	height:70vh;
 	overflow:scroll;
 	border:ridge 3px black;
-	width:fit-content;
 	left:0;
 	right:0;
 	margin:auto;
 	padding:3%;
+	width:70%;
+}
+#divtable table tr th:first-child, #divtable table tr td:first-child {
+	width:70%;
+}
+#divtable table tr input {
+	width:95%;
 }
 .amountbar div span {
 	display:none;
